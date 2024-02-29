@@ -5,7 +5,7 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-header h1 {
+/* header h1 {
     text-align: center;
     color: transparent;
     background: -webkit-linear-gradient(45deg, #f1e64a, #d7f163);
@@ -15,7 +15,19 @@ header h1 {
     font-size: 325%;
     border-bottom: 2px solid black;
     padding-bottom: 10px;
-}  
+}   */
+
+header h1 {
+    text-align: center;
+    background-image: url('rupple.jpg');
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-top: 20px;
+    font-size: 325%;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
 
 nav ul {
     display: flex;
@@ -30,8 +42,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #DAA520; 
+    color: #DAA520;
     font-weight: bold;
+    display: inline-block; /* Make links transformable */
+    transition: transform 0.3s ease; /* Smooth transition for the transform */
+}
+
+nav ul li a:hover {
+    transform: scale(1.5); /* Adjusts the scale for a noticeable hover effect */
 }
 
 #clinic-intro img {
@@ -55,6 +73,53 @@ nav ul li a {
     display: block;
 }
 
+#clinic-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.info-box {
+    flex-basis: 45%; /* Adjusts the width of each box */
+    border: 1px solid #DAA520; /* Adds a border, change color as needed */
+    padding: 20px;
+    border-radius: 10px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: adds a subtle shadow for depth */
+    background-color: rgba(165, 42, 42, 0.7); /* Adds a light grey background, change color as needed */
+}
+
+
+.info-box h3 {
+    font-size: 1.2em;
+    font-family: 'Teko', serif; /* A classy and distinctive font choice */
+    color: #DAA520; /* Gold color to match your theme */
+}
+
+.info-box p {
+    font-size: 1.2em; /* Slightly smaller than the intro paragraph's font size */
+    font-family: 'Roboto Condensed', serif; /* Maintaining consistency with the header */
+    color: #f50e95; /* Standard text color, adjust as needed */
+}
+
+.contact-us-button {
+    position: absolute;
+    top: 25px; 
+    right: 20px; 
+    background-color: #19c6c0; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    z-index: 100; 
+}
+
+.contact-us-button a {
+    text-decoration: none;
+    color: #f1e64a; /* Gold color to match your nav links */
+    font-weight: bold;
+}
+
+.contact-us-button a:hover {
+    color: #0cf332; 
+}
 
 footer {
     position: relative; /* Changed from absolute to relative */
