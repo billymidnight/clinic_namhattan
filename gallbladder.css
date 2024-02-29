@@ -15,8 +15,7 @@ header h1 {
     font-size: 325%;
     border-bottom: 2px solid black;
     padding-bottom: 10px;
-}
-
+}  
 
 nav ul {
     display: flex;
@@ -56,9 +55,16 @@ nav ul li a {
     display: block;
 }
 
+
 footer {
-    position: absolute;
-    bottom: 0;
+    position: relative; /* Changed from absolute to relative */
+    width: 100%;
+    text-align: center;
+    margin-top: 40px; /* Add space above the footer if needed */
+}
+
+footer {
+    position: relative;
     width: 100%;
     text-align: center;
 }
@@ -78,14 +84,19 @@ footer {
 
 
 .hamburger {
-    font-size: 30px; /* Size of the hamburger icon */
-    color: #15e42e; /* Yellow color */
+    font-size: 40px; 
+    color: #f1e64a; 
     cursor: pointer;
     position: absolute;
     top: 0;
     left: 0;
-    padding: 20px; /* Adjust size accordingly */
+    padding: 5px; 
+    background-color: #19c6c0; 
+    margin: 5px; 
     z-index: 100;
+    
+    border-radius: 5px; 
+    box-sizing: border-box; 
 }
 
 /* New styles for dropdown menu */
