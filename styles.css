@@ -1,0 +1,76 @@
+body {
+    background-image: url('oasis.png');
+    background-repeat: repeat-y;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+/* header h1 {
+    text-align: center;
+    color: #ffffff;
+    background: -webkit-linear-gradient(#007cf0, #00dfd8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 20px;
+    font-size: 325%; 
+    border-bottom: 2px solid black;
+    padding-bottom: 10px; 
+} */
+
+header h1 {
+    text-align: center;
+    color: transparent;
+    background: -webkit-linear-gradient(45deg, #f1e64a, #d7f163);
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-top: 20px;
+    font-size: 325%;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    /* Changed font color to dark yellow */
+    color: #DAA520; /* This is a dark yellow color */
+    font-weight: bold;
+}
+
+#clinic-intro img {
+    display: block;
+    margin: 20px auto;
+    width: 40%; /* Modify this to change the image size */
+    /* Making the image ovular */
+    border-radius: 50%;
+}
+
+#clinic-intro p {
+    text-align: center;
+    font-size: 2em; /* Adjusted size */
+    color: rgb(240, 240, 147); /* For better contrast against the brown background */
+    font-family: 'Georgia', serif; /* Keeps the elegant font choice */
+    max-width: 80%;
+    margin: 20px auto; /* Adjusted margin for horizontal centering and some space */
+    padding: 20px; /* Adds padding around the text for spacing */
+    background-color: rgba(165, 42, 42, 0.7); /* Semi-transparent brown */
+    border-radius: 10px; /* Optional: adds rounded corners to the background */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: adds a subtle shadow for depth */
+    display: block;
+}
+
+
+
