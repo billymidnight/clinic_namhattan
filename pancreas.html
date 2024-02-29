@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Karthika Skin Clinic</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallbladder.css">
 </head>
 <body>
+    <div id="dropdown" class="dropdown-content">
+        <a href="#book-appointment">Book an appointment</a>
+        <a href="#order-medicine">Order medicine</a>
+        <a href="#contact-us">Contact us</a>
+    </div>    
     <header>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
         <h1>Dr. Karthika Skin Clinic</h1>
-        <nav>
+        <nav>  
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
@@ -25,11 +31,21 @@
             <p>Welcome to Dr. Karthika Skin Clinic, your premier destination for dermatological care. Our clinic is dedicated to providing you with personalized, high-quality skin care solutions in a welcoming and comfortable environment.</p>
         </section>
     </main>
-
     <footer>
         <p id="bottom-tagline">
             SKIN <img src="star.png" alt="*"> HAIR <img src="star.png" alt="*"> NAIL
         </p>
     </footer>
+    <!-- Adding JavaScript for toggle functionality -->
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("dropdown");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
