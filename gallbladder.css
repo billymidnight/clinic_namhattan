@@ -25,6 +25,7 @@ header h1 {
     background-clip: text;
     margin-top: 20px;
     font-size: 325%;
+    font-family: 'Teko', serif;
     border-bottom: 2px solid black;
     padding-bottom: 10px;
 }
@@ -183,7 +184,6 @@ footer {
     text-align: left;
 }
 
-/* Add :hover style for dropdown links if needed */
 #dropdown a:hover {
     background-color: #555; /* Darker background on hover */
 }
